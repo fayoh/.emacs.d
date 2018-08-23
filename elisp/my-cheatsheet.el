@@ -19,7 +19,7 @@
 (cheatsheet-add-group 'Common
                       '(:key "M-g M-g" :description "Go to line")
                       '(:key "M-g <TAB>" :description "Go to column")
-		      '(:key "C-l" :description "Center current line")
+                      '(:key "C-l" :description "Center current line")
                       '(:key "M-up" :description "Move text up (line or active region)")
                       '(:key "M-down" :description "Move text down (line or active region)")
                       '(:key "C-<tab>" :description "Go to other window")
@@ -27,7 +27,8 @@
                       '(:key "s-t" :description "Look up word on dictcc")
                       '(:key "C-x C--" :description "Decrease font size")
                       '(:key "C-x C-+" :description "Increase font size")
-		      '(:key "C-x C-0" :description "Set default font size")
+                      '(:key "C-x C-0" :description "Set default font size")
+                      '(:key "C-h b" :description "Show available key bindings in current buffer")
                       '(:key "s-c" :description "Show (this) cheat sheet"))
 
 (cheatsheet-add-group 'Prog-mode
