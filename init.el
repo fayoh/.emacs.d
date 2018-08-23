@@ -16,13 +16,6 @@
              '("MELPA" . "http://melpa.org/packages/") t)
 (package-initialize)
 
-;;; TODO: break out setting this to only work env.
-(setq-default url-proxy-services
-       '(("no_proxy" . "^\\(localhost\\|192.*\\)")
-         ("http" . "proxycluster.se.axis.com:3128")
-         ("https" . "proxycluster.se.axis.com:3128")))
-
-
 ;;; Local functions
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load "my-functions")
@@ -86,8 +79,6 @@
 (require 'use-package)
 ;;; General configs
 (require 'general-config)
-;;; Configs only required at axis
-(require 'axis-config)
 ;;; Configs only required at homde
 ;;; (require 'home-config)
 
