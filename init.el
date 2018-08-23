@@ -11,6 +11,7 @@
 ;;; Local functions
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load "my-functions")
+(load "axis-init")
 
 ;; MELPA repositories
 (require 'package)
@@ -85,6 +86,7 @@
 (require 'use-package)
 ;;; General configs
 (require 'general-config)
+(require 'axis-config)
 ;;; Configs only required at home
 ;;; (require 'home-config)
 
