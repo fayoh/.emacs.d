@@ -8,6 +8,9 @@
 ;;          (t
 ;;           ;; Console-specific code
 ;;           ))
+;;; Local functions
+(add-to-list 'load-path "~/.emacs.d/elisp/")
+(load "my-functions")
 
 ;; MELPA repositories
 (require 'package)
@@ -22,9 +25,6 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
-;;; Local functions
-(add-to-list 'load-path "~/.emacs.d/elisp/")
-(load "my-functions")
 
 ;;; Visuals
 (show-paren-mode 1)
@@ -85,7 +85,7 @@
 (require 'use-package)
 ;;; General configs
 (require 'general-config)
-;;; Configs only required at homde
+;;; Configs only required at home
 ;;; (require 'home-config)
 
 ;;; Cheat sheet
