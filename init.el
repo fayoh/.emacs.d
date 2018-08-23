@@ -15,6 +15,12 @@
 (add-to-list 'package-archives
              '("MELPA" . "http://melpa.org/packages/") t)
 (package-initialize)
+;fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
+;install use-package if needed to handle all other installations
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
 
 ;;; Local functions
 (add-to-list 'load-path "~/.emacs.d/elisp/")
