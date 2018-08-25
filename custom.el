@@ -124,11 +124,11 @@
      ("\\` ?\\(?:ElDoc\\|Anzu\\|SP\\|Guide\\|PgLn\\|Undo-Tree\\|Ergo.*\\|,\\|Isearch\\|Ind\\)\\'" nil nil))))
  '(package-selected-packages
    (quote
-    (flyspell-correct-helm ample-zen y abyss-theme change-inner flycheck-popup-tip flycheck-color-mode-line cheatsheet company-shell flycheck-checkbashisms flycheck-demjsonlint json-mode json-navigator company-jedi ample-zen-theme afternoon-theme smex ace-popup-menu avy-menu dad-joke use-package todotxt markdown-mode flycheck)))
+    (mode-icons company-quickhelp company-c-headers company yasnippet-snippets yasnippet highlight-indent-guides graphviz-dot-mode move-text dictcc flyspell-correct-helm ample-zen y abyss-theme change-inner flycheck-popup-tip flycheck-color-mode-line cheatsheet company-shell flycheck-checkbashisms flycheck-demjsonlint json-mode json-navigator company-jedi ample-zen-theme afternoon-theme smex ace-popup-menu avy-menu dad-joke use-package todotxt markdown-mode flycheck)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(popup-face ((t (:background "black" :foreground "gainsboro")))))
+ )
