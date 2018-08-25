@@ -189,6 +189,10 @@
   :ensure t
   :bind (("C-x t" . todotxt))
   :config (setq todotxt-file "~/.todo/todo.txt"))
+
+(use-package cheatsheet
+  :ensure t
+    :bind ("s-c" . cheatsheet-show))
 ;;;---------------------------------------------------------
 
 (provide 'general-config)

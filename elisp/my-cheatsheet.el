@@ -3,9 +3,8 @@
 ;;; Commentary:
 
 ;;; Code:
-(use-package cheatsheet
-  :bind ("s-c" . cheatsheet-show))
 
+;Example
 ;(cheatsheet-add-group 'XX
 ;                      '(:key "" :description "")
 ;                      '(:key "" :description "")
