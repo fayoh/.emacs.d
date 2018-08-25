@@ -13,6 +13,7 @@
   :config (setq dictcc-source-lang "en"
                 dictcc-destination-lang "sv"))
 (use-package flyspell
+  :ensure t
   :hook ((text-mode . flyspell-mode)
          (prog-mode . flyspell-prog-mode))
   :config (setq flyspell-issue-message-flag nil)
@@ -20,6 +21,7 @@
   :delight)
 
 (use-package flyspell-popup
+  :ensure t
   :hook (flyspell-mode . flyspell-popup-auto-correct-mode)
   :after flyspell
   :bind (("C-:" . flyspell-popup-correct)))
@@ -47,6 +49,9 @@
          ("M-X" . smex-major-mode-commands)
          ("C-c C-c M-x" . execute-extended-command))
   :config (setq smex-history-length 20))
+
+(use-package diminish
+  :ensure t)
 ;;;---------------------------------------------------------
 
 ;;; Code editing modes and helper functions
@@ -77,6 +82,7 @@
 ;;;;; ------------------------------------------------------
 
 (use-package ggtags
+  :ensure t
   :config (setq ggtags-mode-line-project-name nil)
   :hook (prog-mode . ggtags-mode))
 
@@ -192,7 +198,7 @@
 
 (use-package cheatsheet
   :ensure t
-    :bind ("s-c" . cheatsheet-show))
+  :bind ("s-c" . cheatsheet-show))
 ;;;---------------------------------------------------------
 
 (provide 'general-config)
